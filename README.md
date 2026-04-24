@@ -13,6 +13,22 @@ A set of Jupyter notebooks for learning the [Anthropic Claude API](https://docs.
 | `004_controlling_output.ipynb` | Shaping output (length, format, stop sequences) |
 | `004_streaming.ipynb` | Streaming responses token-by-token |
 
+## ⚠️ Note on model versions
+
+These notebooks use a **newer Claude model** than the one shown in the original Anthropic learning path, so some outputs (wording, formatting, token counts) will differ from the course material. The code itself is the same — only the `model` string is updated.
+
+```python
+model = "claude-sonnet-4-6"   # used in this repo
+```
+
+**If you want to reproduce the exact behavior shown in the learning path**, change `model` in the first cells of each notebook to the older version the course uses, for example:
+
+```python
+model = "claude-3-5-sonnet-20241022"   # or whichever version the course specifies
+```
+
+Then re-run the cells. Anthropic keeps older model IDs available — see the [models list](https://docs.anthropic.com/en/docs/about-claude/models) for valid options. If an ID is retired you'll get a 404 from the API; pick the closest still-supported one.
+
 ## Requirements
 
 - **Python 3.10+**
