@@ -14,6 +14,7 @@ A set of Jupyter notebooks for learning the [Anthropic Claude API](https://docs.
 | `003_temperature.ipynb` | Controlling randomness with `temperature` |
 | `004_controlling_output.ipynb` | Shaping output (length, format, stop sequences) |
 | `004_streaming.ipynb` | Streaming responses token-by-token |
+| `Quiz on accessing Claude with the API.md` | Quiz with answers |
 
 ### Prompt Evaluation
 
@@ -24,6 +25,7 @@ A set of Jupyter notebooks for learning the [Anthropic Claude API](https://docs.
 | `005_prompt_evals_grader.ipynb` | Grading outputs with model-based evaluation |
 | `005_prompt_evals_fns.ipynb` | Adding evaluation criteria to grading |
 | `005_prompt_evals_complete.ipynb` | Complete evaluation pipeline |
+| `PromptEvaluationQuiz.md` | Quiz with answers |
 
 ## ⚠️ Note on model versions
 
