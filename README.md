@@ -27,6 +27,15 @@ A set of Jupyter notebooks for learning the [Anthropic Claude API](https://docs.
 | `005_prompt_evals_complete.ipynb` | Complete evaluation pipeline |
 | `PromptEvaluationQuiz.md` | Quiz with answers |
 
+### Prompt Engineering Techniques
+
+| File | Topic |
+| --- | --- |
+| `001_prompting.ipynb` | Core prompt engineering techniques |
+| `002_prompting_completed.ipynb` | Completed walkthrough with worked examples |
+| `003_prompting_exercise.ipynb` | Practice exercises |
+| `Quiz_Prompting.md` | Quiz with answers |
+
 ## ⚠️ Note on model versions
 
 These notebooks use a **newer Claude model** than the one shown in the original Anthropic learning path, so some outputs (wording, formatting, token counts) will differ from the course material. The code itself is the same — only the `model` string is updated.
