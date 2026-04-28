@@ -26,4 +26,7 @@ Thumbs.db
 .vscode/
 .idea/
 
-dataset.json
+# Generated files
+output*.html
+output*.json
+dataset*.json
