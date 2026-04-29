@@ -74,6 +74,21 @@ A set of Jupyter notebooks for learning the [Anthropic Claude API](https://docs.
 | `cli_project_COMPLETE/README.md` | Setup and usage for the MCP CLI project |
 | `Quiz_MCP.md` | Quiz with answers |
 
+### Claude Code App Starter
+
+A minimal [FastMCP](https://github.com/jlowin/fastmcp) server scaffold for use with Claude Code as a coding assistant. Unlike the other sections this is a runnable project, not notebooks.
+
+| File | Topic |
+| --- | --- |
+| `app_starter/main.py` | FastMCP server entry point — explicitly registers each tool |
+| `app_starter/tools/math.py` | Example `add` tool showing the `pydantic.Field` + structured-docstring pattern |
+| `app_starter/tools/document.py` | DOCX/PDF → markdown conversion via `markitdown` |
+| `app_starter/tests/test_document.py` | Pytest using real PDF/DOCX fixtures (no mocks) |
+| `app_starter/CLAUDE.md` | Guidance loaded by Claude Code when working in this scaffold |
+| `app_starter/README.md` | Setup, run, and test commands |
+
+> This project uses [`uv`](https://docs.astral.sh/uv/) for dependency management (not `pip`). See [`AntropicApps_ClaudeCode_use/app_starter/README.md`](AntropicApps_ClaudeCode_use/app_starter/README.md) for the exact commands.
+
 ### Intro to Retrieval Augmented Generation
 
 | File | Topic |
