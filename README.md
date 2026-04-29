@@ -51,6 +51,18 @@ A set of Jupyter notebooks for learning the [Anthropic Claude API](https://docs.
 | `009_web_search_complete.ipynb` | Completed web search walkthrough |
 | `Quiz_Tools.md` | Quiz with answers |
 
+### Features of Claude
+
+| File | Topic |
+| --- | --- |
+| `001_thinking.ipynb` | Extended thinking — making reasoning visible |
+| `001_thinking_complete.ipynb` | Completed extended thinking walkthrough |
+| `002_images.ipynb` | Sending images and PDFs as document content |
+| `002_citations_complete.ipynb` | Citations linking responses to source documents |
+| `003_caching.ipynb` | Prompt caching for faster, cheaper repeated requests |
+| `005_code_execution.ipynb` | Code execution tool (sandboxed Python) |
+| `Quiz_FeaturesofClaude.md` | Quiz with answers |
+
 ### Intro to Retrieval Augmented Generation
 
 | File | Topic |

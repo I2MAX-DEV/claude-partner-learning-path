@@ -33,3 +33,5 @@ dataset*.json
 
 main.py
 test.py
+
+churn_analysis_dashboard.png
