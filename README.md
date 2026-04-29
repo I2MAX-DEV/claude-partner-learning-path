@@ -63,6 +63,17 @@ A set of Jupyter notebooks for learning the [Anthropic Claude API](https://docs.
 | `005_code_execution.ipynb` | Code execution tool (sandboxed Python) |
 | `Quiz_FeaturesofClaude.md` | Quiz with answers |
 
+### Model Context Protocol
+
+| File | Topic |
+| --- | --- |
+| `cli_project_COMPLETE/mcp_server.py` | MCP server exposing tools, resources, and prompts |
+| `cli_project_COMPLETE/mcp_client.py` | MCP client connecting to the server over stdio |
+| `cli_project_COMPLETE/main.py` | CLI entry point wiring chat, Claude, and MCP together |
+| `cli_project_COMPLETE/core/` | Chat loop, Claude wrapper, CLI, and tool helpers |
+| `cli_project_COMPLETE/README.md` | Setup and usage for the MCP CLI project |
+| `Quiz_MCP.md` | Quiz with answers |
+
 ### Intro to Retrieval Augmented Generation
 
 | File | Topic |
