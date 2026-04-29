@@ -75,6 +75,12 @@ A set of Jupyter notebooks for learning the [Anthropic Claude API](https://docs.
 | `report.md` | Sample document used as the corpus across notebooks |
 | `VoyageAI_API_Key_Directions.pdf` | Instructions for obtaining a VoyageAI API key |
 
+> 🔑 **The RAG notebooks require a `VOYAGE_API_KEY`** in addition to `ANTHROPIC_API_KEY`. Get one at <https://dashboard.voyageai.com/>, then add it to your `.env` (see [`VoyageAI_API_Key_Directions.pdf`](Intro%20to%20Retrieval%20Augmented%20Generation/VoyageAI_API_Key_Directions.pdf) for step-by-step instructions):
+>
+> ```bash
+> VOYAGE_API_KEY="pa-...your-key-here..."
+> ```
+
 ## ⚠️ Note on model versions
 
 These notebooks use a **newer Claude model** than the one shown in the original Anthropic learning path, so some outputs (wording, formatting, token counts) will differ from the course material. The code itself is the same — only the `model` string is updated.
