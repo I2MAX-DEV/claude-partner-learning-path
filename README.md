@@ -36,6 +36,21 @@ A set of Jupyter notebooks for learning the [Anthropic Claude API](https://docs.
 | `003_prompting_exercise.ipynb` | Practice exercises |
 | `Quiz_Prompting.md` | Quiz with answers |
 
+### Tools Use with Claude
+
+| File | Topic |
+| --- | --- |
+| `001_tools.ipynb` | Defining tools and the basic tool-use loop |
+| `002_tools_multiturn_conversation.ipynb` | Tools across multi-turn conversations |
+| `003_tools_multiturn_implement.ipynb` | Implementing the multi-turn tool loop |
+| `004_tools_multiple_tools.ipynb` | Working with multiple tools in one request |
+| `005_tool_streaming.ipynb` | Streaming responses with tool use |
+| `006_tool_streaming_completed.ipynb` | Completed streaming + tool-use example |
+| `007_text_editor_tool.ipynb` | Using the built-in text editor tool |
+| `008_web_search.ipynb` | Using the built-in web search tool |
+| `009_web_search_complete.ipynb` | Completed web search walkthrough |
+| `Quiz_Tools.md` | Quiz with answers |
+
 ## ⚠️ Note on model versions
 
 These notebooks use a **newer Claude model** than the one shown in the original Anthropic learning path, so some outputs (wording, formatting, token counts) will differ from the course material. The code itself is the same — only the `model` string is updated.
