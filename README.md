@@ -51,6 +51,18 @@ A set of Jupyter notebooks for learning the [Anthropic Claude API](https://docs.
 | `009_web_search_complete.ipynb` | Completed web search walkthrough |
 | `Quiz_Tools.md` | Quiz with answers |
 
+### Intro to Retrieval Augmented Generation
+
+| File | Topic |
+| --- | --- |
+| `001_chunking.ipynb` | Chunking strategies (by character, sentence, section) |
+| `002_embeddings.ipynb` | Generating embeddings with VoyageAI |
+| `003_vectordb.ipynb` | Building a simple vector database for semantic search |
+| `004_bm25.ipynb` | Keyword search with BM25 |
+| `005_hybrid.ipynb` | Hybrid retrieval combining dense embeddings and BM25 |
+| `report.md` | Sample document used as the corpus across notebooks |
+| `VoyageAI_API_Key_Directions.pdf` | Instructions for obtaining a VoyageAI API key |
+
 ## ⚠️ Note on model versions
 
 These notebooks use a **newer Claude model** than the one shown in the original Anthropic learning path, so some outputs (wording, formatting, token counts) will differ from the course material. The code itself is the same — only the `model` string is updated.
