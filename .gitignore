@@ -32,8 +32,8 @@ output*.json
 dataset*.json
 
 main.py
-!Model Context Protocol/cli_project_COMPLETE/main.py
-!AntropicApps_ClaudeCode_use/app_starter/main.py
+!Building with the Claude API/Model Context Protocol/cli_project_COMPLETE/main.py
+!Building with the Claude API/app_starter/main.py
 test.py
 
 churn_analysis_dashboard.png
