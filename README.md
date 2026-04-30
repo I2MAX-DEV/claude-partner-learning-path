@@ -2,7 +2,9 @@
 
 A set of Jupyter notebooks for learning the [Anthropic Claude API](https://docs.anthropic.com/). Each notebook walks through a single concept with runnable examples.
 
-## Notebooks
+## Building with the Claude API
+
+All API/notebook sections below live under the [`Building with the Claude API/`](Building%20with%20the%20Claude%20API/) folder.
 
 ### Accessing Claude with the API
 
@@ -87,7 +89,7 @@ A minimal [FastMCP](https://github.com/jlowin/fastmcp) server scaffold for use w
 | `app_starter/CLAUDE.md` | Guidance loaded by Claude Code when working in this scaffold |
 | `app_starter/README.md` | Setup, run, and test commands |
 
-> This project uses [`uv`](https://docs.astral.sh/uv/) for dependency management (not `pip`). See [`AntropicApps_ClaudeCode_use/app_starter/README.md`](AntropicApps_ClaudeCode_use/app_starter/README.md) for the exact commands.
+> This project uses [`uv`](https://docs.astral.sh/uv/) for dependency management (not `pip`). See [`Building with the Claude API/app_starter/README.md`](Building%20with%20the%20Claude%20API/app_starter/README.md) for the exact commands.
 
 ### Intro to Retrieval Augmented Generation
 
@@ -101,11 +103,23 @@ A minimal [FastMCP](https://github.com/jlowin/fastmcp) server scaffold for use w
 | `report.md` | Sample document used as the corpus across notebooks |
 | `VoyageAI_API_Key_Directions.pdf` | Instructions for obtaining a VoyageAI API key |
 
-> 🔑 **The RAG notebooks require a `VOYAGE_API_KEY`** in addition to `ANTHROPIC_API_KEY`. Get one at <https://dashboard.voyageai.com/>, then add it to your `.env` (see [`VoyageAI_API_Key_Directions.pdf`](Intro%20to%20Retrieval%20Augmented%20Generation/VoyageAI_API_Key_Directions.pdf) for step-by-step instructions):
+> 🔑 **The RAG notebooks require a `VOYAGE_API_KEY`** in addition to `ANTHROPIC_API_KEY`. Get one at <https://dashboard.voyageai.com/>, then add it to your `.env` (see [`VoyageAI_API_Key_Directions.pdf`](Building%20with%20the%20Claude%20API/Intro%20Retrival%20Augmented%20Generation/VoyageAI_API_Key_Directions.pdf) for step-by-step instructions):
 >
 > ```bash
 > VOYAGE_API_KEY="pa-...your-key-here..."
 > ```
+
+### Agents and Workflows
+
+| File | Topic |
+| --- | --- |
+| [`Quiz_onAgents_Workflows.md`](Building%20with%20the%20Claude%20API/Quiz_onAgents_Workflows.md) | Quiz on agent vs. workflow patterns (chaining, routing, parallelization, evaluator-optimizer) |
+
+### Final Assessment
+
+| File | Topic |
+| --- | --- |
+| [`Final_Assessment.md`](Building%20with%20the%20Claude%20API/Final_Assessment.md) | End-of-path quiz covering tool use, prompt engineering, evaluation, MCP, and agents/workflows |
 
 ## ⚠️ Note on model versions
 
