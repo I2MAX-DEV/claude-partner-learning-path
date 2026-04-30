@@ -95,6 +95,30 @@ print(msg.content[0].text)
 - **`ModuleNotFoundError: anthropic`** — the notebook's kernel is pointing at a different Python. In Jupyter select the kernel from your `.venv`, or re-run `%pip install anthropic python-dotenv` in the first cell.
 - **Credit / rate-limit errors** — check your [usage dashboard](https://console.anthropic.com/settings/usage) and billing.
 
+## GitHub Integrations
+
+If you want to test Claude's GitHub integration after cloning this repo:
+
+1. **Remove the existing git origin and set your own repository**
+   ```bash
+   git remote remove origin
+   git remote add origin https://github.com/<your-username>/<your-repo>.git
+   git push -u origin main
+   ```
+
+2. **Install the GitHub App**
+
+   Run `/install-github-app` in Claude Code. This command walks you through the setup process:
+   - Install the Claude Code app on GitHub
+   - Add your API key
+   - Automatically generate a pull request with the workflow files
+
+3. **Merge the generated PR**
+
+   The generated pull request adds two GitHub Actions to your repository. Once merged, you'll have the workflow files in your `.github/workflows` directory.
+
+After setup, you can test Claude's GitHub integration by creating issues, pull requests, and using Claude Code's GitHub-aware commands.
+
 ## License
 
 For learning purposes only.
