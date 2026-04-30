@@ -16,6 +16,12 @@ Standalone, runnable MCP CLI project that chats with Claude through an MCP serve
 
 → See [`Introduction to Model Context Protocol/README.md`](Introduction%20to%20Model%20Context%20Protocol/README.md) for setup, `.env` keys, and run commands.
 
+### 📙 [Claude Code in Action](Claude%20Code%20in%20Action/Readme.md)
+
+Hands-on course for the Claude Code CLI, paired with `uigen` — a Next.js 15 / React 19 starter (AI-powered React component generator with live preview, Prisma + SQLite, Tailwind v4) used as the working codebase for the exercises.
+
+→ See [`Claude Code in Action/Readme.md`](Claude%20Code%20in%20Action/Readme.md) for Claude Code install steps and `uigen` setup (`npm run setup`, `.env` with `ANTHROPIC_API_KEY`, `npm run dev`).
+
 ## Requirements
 
 - **Python 3.10+**
