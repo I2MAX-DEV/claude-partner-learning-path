@@ -1,141 +1,20 @@
 # Claude Partner Learning Path
 
-A set of Jupyter notebooks for learning the [Anthropic Claude API](https://docs.anthropic.com/). Each notebook walks through a single concept with runnable examples.
+A set of Jupyter notebooks and runnable projects for learning the [Anthropic Claude API](https://docs.anthropic.com/) and the Model Context Protocol. Each module walks through a single concept with hands-on examples.
 
-## Building with the Claude API
+## Courses
 
-All API/notebook sections below live under the [`Building with the Claude API/`](Building%20with%20the%20Claude%20API/) folder.
+### 📘 [Building with the Claude API](Building%20with%20the%20Claude%20API/README.md)
 
-### Accessing Claude with the API
+Notebook-based course covering the Claude API end-to-end: requests and streaming, system prompts and temperature, prompt engineering, prompt evaluation, tool use, citations, prompt caching, code execution, MCP, RAG, agents/workflows, and a final assessment.
 
-| File | Topic |
-| --- | --- |
-| `001_requests.ipynb` | Basic request/response, multi-turn conversation |
-| `001_requests_exercise.ipynb` | Practice exercises for basic requests |
-| `002_system_prompt.ipynb` | Using system prompts to steer Claude |
-| `003_temperature.ipynb` | Controlling randomness with `temperature` |
-| `004_controlling_output.ipynb` | Shaping output (length, format, stop sequences) |
-| `004_streaming.ipynb` | Streaming responses token-by-token |
-| `Quiz on accessing Claude with the API.md` | Quiz with answers |
+→ See [`Building with the Claude API/README.md`](Building%20with%20the%20Claude%20API/README.md) for the full file list and per-section topics.
 
-### Prompt Evaluation
+### 📗 [Introduction to Model Context Protocol](Introduction%20to%20Model%20Context%20Protocol/README.md)
 
-| File | Topic |
-| --- | --- |
-| `005_prompt_evals.ipynb` | Dataset generation for prompt evaluation |
-| `005_prompt_evals_running.ipynb` | Running prompts against test cases |
-| `005_prompt_evals_grader.ipynb` | Grading outputs with model-based evaluation |
-| `005_prompt_evals_fns.ipynb` | Adding evaluation criteria to grading |
-| `005_prompt_evals_complete.ipynb` | Complete evaluation pipeline |
-| `PromptEvaluationQuiz.md` | Quiz with answers |
+Standalone, runnable MCP CLI project that chats with Claude through an MCP server exposing tools, resources, and prompts. Includes the MCP Inspector workflow (`mcp dev mcp_server.py`).
 
-### Prompt Engineering Techniques
-
-| File | Topic |
-| --- | --- |
-| `001_prompting.ipynb` | Core prompt engineering techniques |
-| `002_prompting_completed.ipynb` | Completed walkthrough with worked examples |
-| `003_prompting_exercise.ipynb` | Practice exercises |
-| `Quiz_Prompting.md` | Quiz with answers |
-
-### Tools Use with Claude
-
-| File | Topic |
-| --- | --- |
-| `001_tools.ipynb` | Defining tools and the basic tool-use loop |
-| `002_tools_multiturn_conversation.ipynb` | Tools across multi-turn conversations |
-| `003_tools_multiturn_implement.ipynb` | Implementing the multi-turn tool loop |
-| `004_tools_multiple_tools.ipynb` | Working with multiple tools in one request |
-| `005_tool_streaming.ipynb` | Streaming responses with tool use |
-| `006_tool_streaming_completed.ipynb` | Completed streaming + tool-use example |
-| `007_text_editor_tool.ipynb` | Using the built-in text editor tool |
-| `008_web_search.ipynb` | Using the built-in web search tool |
-| `009_web_search_complete.ipynb` | Completed web search walkthrough |
-| `Quiz_Tools.md` | Quiz with answers |
-
-### Features of Claude
-
-| File | Topic |
-| --- | --- |
-| `001_thinking.ipynb` | Extended thinking — making reasoning visible |
-| `001_thinking_complete.ipynb` | Completed extended thinking walkthrough |
-| `002_images.ipynb` | Sending images and PDFs as document content |
-| `002_citations_complete.ipynb` | Citations linking responses to source documents |
-| `003_caching.ipynb` | Prompt caching for faster, cheaper repeated requests |
-| `005_code_execution.ipynb` | Code execution tool (sandboxed Python) |
-| `Quiz_FeaturesofClaude.md` | Quiz with answers |
-
-### Model Context Protocol
-
-| File | Topic |
-| --- | --- |
-| `cli_project_COMPLETE/mcp_server.py` | MCP server exposing tools, resources, and prompts |
-| `cli_project_COMPLETE/mcp_client.py` | MCP client connecting to the server over stdio |
-| `cli_project_COMPLETE/main.py` | CLI entry point wiring chat, Claude, and MCP together |
-| `cli_project_COMPLETE/core/` | Chat loop, Claude wrapper, CLI, and tool helpers |
-| `cli_project_COMPLETE/README.md` | Setup and usage for the MCP CLI project |
-| `Quiz_MCP.md` | Quiz with answers |
-
-### Claude Code App Starter
-
-A minimal [FastMCP](https://github.com/jlowin/fastmcp) server scaffold for use with Claude Code as a coding assistant. Unlike the other sections this is a runnable project, not notebooks.
-
-| File | Topic |
-| --- | --- |
-| `app_starter/main.py` | FastMCP server entry point — explicitly registers each tool |
-| `app_starter/tools/math.py` | Example `add` tool showing the `pydantic.Field` + structured-docstring pattern |
-| `app_starter/tools/document.py` | DOCX/PDF → markdown conversion via `markitdown` |
-| `app_starter/tests/test_document.py` | Pytest using real PDF/DOCX fixtures (no mocks) |
-| `app_starter/CLAUDE.md` | Guidance loaded by Claude Code when working in this scaffold |
-| `app_starter/README.md` | Setup, run, and test commands |
-
-> This project uses [`uv`](https://docs.astral.sh/uv/) for dependency management (not `pip`). See [`Building with the Claude API/app_starter/README.md`](Building%20with%20the%20Claude%20API/app_starter/README.md) for the exact commands.
-
-### Intro to Retrieval Augmented Generation
-
-| File | Topic |
-| --- | --- |
-| `001_chunking.ipynb` | Chunking strategies (by character, sentence, section) |
-| `002_embeddings.ipynb` | Generating embeddings with VoyageAI |
-| `003_vectordb.ipynb` | Building a simple vector database for semantic search |
-| `004_bm25.ipynb` | Keyword search with BM25 |
-| `005_hybrid.ipynb` | Hybrid retrieval combining dense embeddings and BM25 |
-| `report.md` | Sample document used as the corpus across notebooks |
-| `VoyageAI_API_Key_Directions.pdf` | Instructions for obtaining a VoyageAI API key |
-
-> 🔑 **The RAG notebooks require a `VOYAGE_API_KEY`** in addition to `ANTHROPIC_API_KEY`. Get one at <https://dashboard.voyageai.com/>, then add it to your `.env` (see [`VoyageAI_API_Key_Directions.pdf`](Building%20with%20the%20Claude%20API/Intro%20Retrival%20Augmented%20Generation/VoyageAI_API_Key_Directions.pdf) for step-by-step instructions):
->
-> ```bash
-> VOYAGE_API_KEY="pa-...your-key-here..."
-> ```
-
-### Agents and Workflows
-
-| File | Topic |
-| --- | --- |
-| [`Quiz_onAgents_Workflows.md`](Building%20with%20the%20Claude%20API/Quiz_onAgents_Workflows.md) | Quiz on agent vs. workflow patterns (chaining, routing, parallelization, evaluator-optimizer) |
-
-### Final Assessment
-
-| File | Topic |
-| --- | --- |
-| [`Final_Assessment.md`](Building%20with%20the%20Claude%20API/Final_Assessment.md) | End-of-path quiz covering tool use, prompt engineering, evaluation, MCP, and agents/workflows |
-
-## ⚠️ Note on model versions
-
-These notebooks use a **newer Claude model** than the one shown in the original Anthropic learning path, so some outputs (wording, formatting, token counts) will differ from the course material. The code itself is the same — only the `model` string is updated.
-
-```python
-model = "claude-sonnet-4-6"   # used in this repo
-```
-
-**If you want to reproduce the exact behavior shown in the learning path**, change `model` in the first cells of each notebook to the older version the course uses, for example:
-
-```python
-model = "claude-3-5-sonnet-20241022"   # or whichever version the course specifies
-```
-
-Then re-run the cells. Anthropic keeps older model IDs available — see the [models list](https://docs.anthropic.com/en/docs/about-claude/models) for valid options. If an ID is retired you'll get a 404 from the API; pick the closest still-supported one.
+→ See [`Introduction to Model Context Protocol/README.md`](Introduction%20to%20Model%20Context%20Protocol/README.md) for setup, `.env` keys, and run commands.
 
 ## Requirements
 
@@ -144,9 +23,12 @@ Then re-run the cells. Anthropic keeps older model IDs available — see the [mo
 - **Jupyter** (or VS Code with the Jupyter extension) to open the notebooks.
 
 Python packages (also in `requirements.txt`):
+
 - `anthropic` — official Anthropic Python SDK
 - `python-dotenv` — loads the API key from a `.env` file
 - `jupyter`
+
+> The MCP CLI project under [`Introduction to Model Context Protocol/`](Introduction%20to%20Model%20Context%20Protocol/README.md) has its own dependencies managed via `uv` / `pyproject.toml`.
 
 ## Setup
 
