@@ -18,9 +18,12 @@ Standalone, runnable MCP CLI project that chats with Claude through an MCP serve
 
 ### 📙 [Claude Code in Action](Claude%20Code%20in%20Action/Readme.md)
 
-Hands-on course for the Claude Code CLI, paired with `uigen` — a Next.js 15 / React 19 starter (AI-powered React component generator with live preview, Prisma + SQLite, Tailwind v4) used as the working codebase for the exercises.
+Hands-on course for the Claude Code CLI, with two working codebases under [`Claude Code in Action/`](Claude%20Code%20in%20Action/Readme.md):
 
-→ See [`Claude Code in Action/Readme.md`](Claude%20Code%20in%20Action/Readme.md) for Claude Code install steps and `uigen` setup (`npm run setup`, `.env` with `ANTHROPIC_API_KEY`, `npm run dev`).
+- **`uigen`** — Next.js 15 / React 19 starter (AI-powered React component generator with live preview, Prisma + SQLite, Tailwind v4).
+- **`queries`** — TypeScript SQLite e-commerce query library used to practice Claude Code hooks, custom commands, and the Agent SDK.
+
+→ See [`Claude Code in Action/Readme.md`](Claude%20Code%20in%20Action/Readme.md) for Claude Code install steps and per-project setup (`npm run setup`, `.env` with `ANTHROPIC_API_KEY`).
 
 ## Requirements
 
@@ -39,12 +42,14 @@ Python packages (also in `requirements.txt`):
 ## Setup
 
 1. **Clone the repo**
+
    ```bash
    git clone https://github.com/I2MAX-DEV/claude-partner-learning-path.git
    cd claude-partner-learning-path
    ```
 
 2. **Create a virtual environment and install dependencies**
+
    ```bash
    python3 -m venv .venv
    source .venv/bin/activate       # Windows: .venv\Scripts\activate
@@ -54,10 +59,13 @@ Python packages (also in `requirements.txt`):
 3. **Add your API key**
 
    Copy the example file and paste in your real key:
+
    ```bash
    cp .env.example .env
    ```
+
    Then edit `.env`:
+
    ```
    ANTHROPIC_API_KEY="sk-ant-api03-...your-key-here..."
    ```
@@ -100,6 +108,7 @@ print(msg.content[0].text)
 If you want to test Claude's GitHub integration after cloning this repo:
 
 1. **Remove the existing git origin and set your own repository**
+
    ```bash
    git remote remove origin
    git remote add origin https://github.com/<your-username>/<your-repo>.git
