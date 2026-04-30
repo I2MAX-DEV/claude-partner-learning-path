@@ -1,0 +1,64 @@
+# Agents and Workflows Quiz
+
+## Question 1
+
+You're building an agent with tools. Which approach will give Claude the most flexibility to handle unexpected requests?
+
+- [ ] Give Claude only one powerful tool
+- [ ] Provide very specific tools like "write_python_function" and "debug_code"
+- [x] Provide abstract tools like "read_file", "write_file", and "run_command"
+- [ ] Provide tools that only work for planned scenarios
+
+## Question 2
+
+You want Claude to write a report, then check if it's good enough, and improve it if needed. What pattern are you using?
+
+- [ ] Chaining workflow
+- [x] Evaluator-Optimizer pattern
+- [ ] Parallelization workflow
+- [ ] Routing workflow
+
+## Question 3
+
+Your app generates different types of social media content. Programming topics need educational scripts, while sports topics need entertainment-focused content. What pattern should you use?
+
+- [x] Route requests to specialized processing pipelines
+- [ ] Use the same prompt for everything
+- [ ] Ask users to write their own content
+- [ ] Always use the entertainment approach
+
+## Question 4
+
+Claude keeps ignoring some of your rules when you give it a long prompt with many requirements. What workflow approach would help?
+
+- [ ] Make the prompt even longer with more rules
+- [ ] Run everything in parallel
+- [ ] Use a routing workflow to categorize first
+- [x] Chain the task into focused sequential steps
+
+## Question 5
+
+You need Claude to recommend the best material for a part by considering metal, plastic, ceramic, and wood options. Each material has different criteria. What's the best approach?
+
+- [ ] Chain the evaluations one after another
+- [ ] Ask Claude to pick randomly
+- [x] Send separate requests for each material type in parallel
+- [ ] Put all criteria in one big prompt
+
+## Question 6
+
+You need to choose between a workflow and an agent for your app. Reliability and predictable results are most important to you. Which should you pick?
+
+- [ ] Always use an agent for maximum flexibility
+- [x] Use a workflow since it's more reliable and testable
+- [ ] Combine both approaches equally
+- [ ] Use whichever is easier to code
+
+## Question 7
+
+You're building an app where users upload photos of damaged car parts and always get repair cost estimates. You know exactly what steps are needed each time. What should you use?
+
+- [ ] Multiple agents working together
+- [ ] A single complex prompt
+- [ ] An agent with many specialized tools
+- [x] A workflow with predetermined steps
